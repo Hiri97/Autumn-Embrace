@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+    <!-------main page..-->
+
+    <div class="scroll-wrapper">
+        <div class="container" id="home">
+            <div class="layer"></div>
+            <div class="mainpagevideo">
+                <video class="fall" src="assets/videos/fall-1.mp4" autoplay muted loop alt="woman"></video>
+            </div>
+        </div>
+<!------social media triangle-->
+        <div class="triangle">
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+
+
+
+
+<!--------this iframe is used from codepen.com and its in the dist file in css assets that is modified-->
+        <iframe src="css/welcom html/2-in-2021-welcome-css-stylus-pug/2-in-2021-welcome-css-stylus-pug/dist/index.html" frameborder="0"></iframe>
+<!-------due to lack of javascript for this part there is no transition section for navbar , and iforgot to add it via div to navbar-->
+        <nav class="navbar">
+            <img class="logo" src="assets/images/logo.png" alt="logo">  
+            <div class="u-s">
+                <ul>
+                    <div class="h-s">
+                        <li class="home"><a href="#home">Home</a></li>
+                    </div>
+                    <div class="a-s">
+                        <li class="about"><a href="#about-container">About</a></li>
+                    </div>
+                    <div class="c-s">
+                        <li class="contact"><a href="#contact-container">Contact</a></li>
+                    </div>
+                    <div class="p-s">
+                        <li class="price"><a href="#price">Price</a></li>
+                    </div>
+                    <div class="g-s">
+                        <li class="gallery"><a href="#item-container">Gallery</a></li>
+                    </div>
+                </ul>
+            </div> 
+        </nav>
+        <!-------item gallery-->
+
+        <div class="title-container">
+            <div class="title-item">
+                <h1>Top Selling Items</h1>
+            </div>
+        </div>
+
+        <div class="item-container" id="item-container">
+            <div class="item1">
+                <img src="assets/images/cl1.jpg" alt="item1">
+                <h2>Item 1</h2>
+                <p>price</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="item2">
+                <img src="assets/images/cl2.jpg" alt="item2">
+                <h2>Item 2</h2>
+                <p>price</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="item3">
+                <img src="assets/images/cl3.jpg" alt="item3">
+                <h2>Item 3</h2>
+                <p>price</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="item4">
+                <img src="assets/images/cl4.jpg" alt="item4">
+                <h2>Item 4</h2>
+                <p>price</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <!-------about us-->
+
+        <div class="about-container" id="about-container">
+            <h1>About Us</h1>
+            <div class="first-container-left">
+                <div class="paragraph-container">
+                    <p>As autumn sweeps in with its symphony of crisp winds and golden hues, a subtle magic awakens in the air. Fashion, like the season itself, becomes a dance of warmth and elegance, an invitation to wrap oneself in the rich textures and colors of nature’s grand finale. Gone are the bright linens of summer; in their place come sumptuous knits, velvets, and wool that cocoon and comfort, with colors that echo the deep reds, burnt oranges, and earthy browns of falling leaves.
+
+                        At Autumn Embrace Co., we capture the essence of fall in every stitch, crafting clothing that not only warms the body but also stirs the soul. Our collection is inspired by the timeless beauty of the season: soft, oversized sweaters to curl up in on brisk evenings, coats woven with threads as warm as a hearth’s glow, and scarves that feel like gentle embraces. We understand that autumn fashion is about more than just attire; it's about creating moments—moments of reflection, of gathering, of comfort.
+                        
+                        Our designs are crafted to celebrate these fleeting days, drawing from nature's palette to paint an experience that feels personal, intimate, and cherished. Each piece is an ode to the artistry of autumn, meant to be worn in moments both grand and small: a walk through a park carpeted in amber leaves, a fireside evening with friends, or a morning stroll where the mist meets the golden dawn. We invite you to step into the season with us, wrapped in the essence of autumn itself.</p>
+                    
+                        <div class="reading-leaf" alt="leaf">
+                        <img class="leaf" src="assets/images/le.png" alt="leaf" style="width: 30%; height: auto; object-fit: cover; position: absolute; bottom:20% left: 50%; transform: translate(-50%, -50%); " >
+                        <audio class="leaf-audio" controls autoplay src="/assets/sounds/leaf.mp3"></audio>
+                    </div>
+                </div>
+                <img class="about-image" src="assets/images/fall.jpg" alt="woman">
+            </div>
+            <div class="second-container-right">
+                <p></p>
+                <img class="about-image2" src="assets/images/fa.jpg" alt="woman">
+            </div>
+        </div>
+    </div>
+
+    <!-------contact page-->
+
+    <div class="contact-container" id="contact-container">
+        <h1>Contact Us</h1>
+        <div class="contact-form">
+            <form method="POST" action="#">
+                <h2>Send Us a Message</h2>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Write your message here" required></textarea>
+                <input type="submit" value="Send Message" class="submit-btn">
+            </form>
+        </div>
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p>📍 Törnbacken 5, Stockholm, Solna, 11556</p>
+            <p>📞 (123) 456-7890</p>
+            <p>✉️ info@autumnembrace.com</p>
+            <p>⏰ Mon-Fri: 9:00 AM - 6:00 PM</p>
+        </div>
+    </div>
+
+
+
+
+
+
+</body>
+</html>
